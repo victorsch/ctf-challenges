@@ -48,6 +48,7 @@ app.get('/contact', (req, res) => {
 });
 
 // Start the server
-app.listen(3000, () => {
-  console.log('Server listening on port 3000');
+app.listen(48974, () => {
+  console.log('Server listening on port 48974');
 });
+ 
