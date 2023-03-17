@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title><%= title %> - e-Leet Hax</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme css (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">e-leet hax team</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Members</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center" style="background-image: url('assets/img/hacker1.jpg')">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/avatar.jpg" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Our Goal is Mayhem</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Ransomware - DDoS - Social Media Hacks</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Members</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <ul>
+                            <li>Big Pimp</li>
+                            <li>Scuzz</li>
+                            <li>Big Jon</li>
+                            <li>l0rdi3</li>
+                            <li>gr1zz</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content--> 
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">There isn't anything to know about us other than the fact that we're a really dangerous cybergang! Like, we're literally so dangerous that the government won't even come after us because they know how dangerous we are, thus making it too dangerous for them to go after a dangerous cybergang such as ourselves.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Still reading? Good, that gives us more of a chance to tell you about how dangerous we really are. Have you heard of lions? Yea, well we're way more dangerous than they are.</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="javascript:void(0)">
+                        <i class="fas fa-download me-2"></i>
+                        Free Download! (Not Malware)
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Gang Membership Request Form</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                            <% if (error_message != null) { %>
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    <%= error_message %>
+                                  </div>
+                                <%} %>                            
+                        
+                        <form id="contactForm" action="/join" method="POST">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name..." />
+                                <label for="name">Full name</label>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback">An email is required.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="phone" id="phone" type="tel" placeholder="(123) 456-7890" />
+                                <label for="phone">Evil Scale (1-10)</label>
+                            </div>
+                            <!-- Link input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="link" id="message" type="text" placeholder="Enter your message here..."/>
+                                <label for="message">Link to your Github</label>
+                            </div>
+                           
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    <br />
+                                </div>
+                            </div>
+                            
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; e-Leet Hax Team 2023</small></div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <!-- TODO: Remove this comment block-->
+        <script>
+
+        </script>
+    </body>
+</html>
