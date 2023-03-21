@@ -52,6 +52,8 @@ while True:
             elif (str(data_str.strip()) == "3"):
                 client_socket.send(str(f"Your balance is: {balance}\n").encode('utf-8'))
             
+        except BrokenPipeError as e:
+            continue:
         except Exception as e:
             client_socket.send(str(e).encode('utf-8'))
             # close the connection
