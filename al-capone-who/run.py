@@ -53,9 +53,15 @@ while True:
                 client_socket.send(str(f"Your balance is: {balance}\n").encode('utf-8'))
             
         except BrokenPipeError as e:
-            client_socket, addr = server_socket.accept()
-            running = True
-            balance = 1543.27
+            running = False
+            client_socket.close()
+            break
+        except KeyboardInterrupt:
+            print("\nKeyboardInterrupt detected. Closing server...")
+            # close the server socket
+            running = False
+            client_socket.close()
+            break
         except Exception as e:
             client_socket.send(str(e).encode('utf-8'))
             # close the connection
