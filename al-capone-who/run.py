@@ -75,8 +75,8 @@ while True:
         # close the server socket
         client_socket.close()
         break
-except Exception as e:
-                client_socket.send(str(e).encode('utf-8'))
-                keep_going = False
-                # close the connection
-                client_socket.close()
+    except Exception as e:
+        client_socket.send(str(e).encode('utf-8'))
+        keep_going = False
+        # close the connection
+        client_socket.close()
