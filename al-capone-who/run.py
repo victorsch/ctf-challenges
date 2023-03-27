@@ -24,19 +24,20 @@ while True:
         print(f'Connection from {addr} has been established!')
         
         while keep_going:
-            client_socket.send(str("\n").encode('utf-8'))
-            client_socket.send(str("Welcome to your banking application! Please tell us what you would like to do: \n").encode('utf-8'))
-            client_socket.send(str("1. Deposit\n").encode('utf-8'))
-            client_socket.send(str("2. Withdraw\n").encode('utf-8'))
-            client_socket.send(str("3. Balance\n").encode('utf-8'))
-
-            # receive the data from the client
-            data = client_socket.recv(1024)
-
-            # decode the data into a string
-            data_str = data.decode('utf-8')
-            
             try:
+                client_socket.send(str("\n").encode('utf-8'))
+                client_socket.send(str("Welcome to your banking application! Please tell us what you would like to do: \n").encode('utf-8'))
+                client_socket.send(str("1. Deposit\n").encode('utf-8'))
+                client_socket.send(str("2. Withdraw\n").encode('utf-8'))
+                client_socket.send(str("3. Balance\n").encode('utf-8'))
+
+                # receive the data from the client
+                data = client_socket.recv(1024)
+
+                # decode the data into a string
+                data_str = data.decode('utf-8')
+            
+            
                 if (str(data_str.strip()) == "1"):
                     client_socket.send(str(f"How much would you like to deposit?\n").encode('utf-8'))
                     deposit_amount = client_socket.recv(1024).decode('utf-8')
@@ -74,3 +75,8 @@ while True:
         # close the server socket
         client_socket.close()
         break
+except Exception as e:
+                client_socket.send(str(e).encode('utf-8'))
+                keep_going = False
+                # close the connection
+                client_socket.close()
